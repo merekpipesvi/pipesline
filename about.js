@@ -241,6 +241,6 @@
   /* ---------- start ---------- */
   const fromHash = location.hash.slice(1);
   if (ids.includes(fromHash)) show(fromHash, { scroll: true });
-  else show('roots', { record: false });
+  else show('work', { record: false });
   addEventListener('hashchange', () => show(location.hash.slice(1), { scroll: true }));
 })();

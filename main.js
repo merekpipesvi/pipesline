@@ -184,7 +184,8 @@
     ],
     whoami: () => [
       { t: 'Merek Pipes' , c: 'ok' },
-      { t: 'software engineer · AI systems · Azure · distributed systems' },
+      { t: 'full-stack software engineer · 3+ years in Silicon Valley' },
+      { t: 'AI systems · Azure · distributed systems' },
       { t: 'builds AI systems that thousands of people use' },
       { t: 'likes: solving problems in ways that take the thinking off the user', c: 'dim' },
       { t: 'more   ', c: 'dim', href: 'about.html', label: 'about.html ↗' },

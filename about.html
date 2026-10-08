@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>About Merek Pipes</title>
-  <meta name="description" content="Merek Pipes: grew up in a family cider business, played NCAA D1 hockey, played NCAA D1 hockey as a goaltender, studied Computer Engineering with a minor in Economics, and now builds AI systems in Azure.">
+  <meta name="description" content="Merek Pipes is a full-stack software engineer with 3+ years in Silicon Valley, building production AI systems and web apps.">
   <meta name="theme-color" content="#070a09">
   <meta property="og:title" content="About Merek Pipes">
-  <meta property="og:description" content="Family business roots, D1 hockey, Computer Engineering, and production AI systems.">
+  <meta property="og:description" content="Full-stack software engineer, 3+ years in Silicon Valley. Production AI systems in Azure.">
   <meta property="og:url" content="https://pipesline.com/about">
   <meta property="og:image" content="https://pipesline.com/img/merek.jpg">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23070a09'/%3E%3Cpath d='M11 26V8h6.5a5 5 0 0 1 0 10H11' fill='none' stroke='%233dff8a' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
@@ -41,13 +41,14 @@
         <p class="cmd mono">$ cat ~/README.md</p>
         <h1 class="mono">Merek Pipes</h1>
         <p class="lead">I love to solve problems in efficient ways that alleviate the burden of thought from the user.</p>
-        <p>I grew up on a cider farm watching a family business grow, played goalie across Canada and the US, studied Computer Engineering with a minor in Economics, and now I build AI systems that run in production.</p>
+        <p>I'm a full-stack software engineer with 3+ years of experience working in Silicon Valley. These days I build AI systems that run in production in Azure. Before that, I grew up on a cider farm watching a family business grow and played goalie across Canada and the US.</p>
 
         <dl class="facts mono">
-          <div><dt>studied</dt><dd>Computer Engineering, Economics minor</dd></div>
-          <div><dt>gpa</dt><dd>3.97</dd></div>
-          <div><dt>hockey</dt><dd>goaltender, 4 years NCAA Division I</dd></div>
-          <div><dt>now</dt><dd>AI systems · Azure · full-stack</dd></div>
+          <div><dt>role</dt><dd>full-stack software engineer</dd></div>
+          <div><dt>exp</dt><dd>3+ years, Silicon Valley</dd></div>
+          <div><dt>now</dt><dd>AI systems · Azure · IaC</dd></div>
+          <div><dt>stack</dt><dd>web front to back, LLMs, graph RAG</dd></div>
+          <div><dt>studied</dt><dd>Computer Engineering, Union College</dd></div>
           <div><dt>starter</dt><dd>sourdough, free on request</dd></div>
         </dl>
 
@@ -63,17 +64,106 @@
     <section class="explorer" id="explore" aria-label="About Merek">
       <div class="tree mono" role="tablist" aria-label="Sections" aria-orientation="vertical">
         <p class="tree-root" aria-hidden="true">~/merek</p>
-        <button role="tab" id="t-roots" aria-controls="roots" type="button"><span class="br" aria-hidden="true">├─</span>roots/<kbd>1</kbd></button>
-        <button role="tab" id="t-hockey" aria-controls="hockey" type="button"><span class="br" aria-hidden="true">├─</span>hockey/<kbd>2</kbd></button>
-        <button role="tab" id="t-academic" aria-controls="academic" type="button"><span class="br" aria-hidden="true">├─</span>academic/<kbd>3</kbd></button>
-        <button role="tab" id="t-work" aria-controls="work" type="button"><span class="br" aria-hidden="true">├─</span>work/<kbd>4</kbd></button>
-        <button role="tab" id="t-built" aria-controls="built" type="button"><span class="br" aria-hidden="true">├─</span>built/<kbd>5</kbd></button>
+        <button role="tab" id="t-work" aria-controls="work" type="button"><span class="br" aria-hidden="true">├─</span>work/<kbd>1</kbd></button>
+        <button role="tab" id="t-built" aria-controls="built" type="button"><span class="br" aria-hidden="true">├─</span>built/<kbd>2</kbd></button>
+        <button role="tab" id="t-roots" aria-controls="roots" type="button"><span class="br" aria-hidden="true">├─</span>roots/<kbd>3</kbd></button>
+        <button role="tab" id="t-hockey" aria-controls="hockey" type="button"><span class="br" aria-hidden="true">├─</span>hockey/<kbd>4</kbd></button>
+        <button role="tab" id="t-academic" aria-controls="academic" type="button"><span class="br" aria-hidden="true">├─</span>academic/<kbd>5</kbd></button>
         <button role="tab" id="t-offline" aria-controls="offline" type="button"><span class="br" aria-hidden="true">└─</span>offline/<kbd>6</kbd></button>
         <p class="tree-hint" aria-hidden="true">press 1 to 6 or use arrows</p>
       </div>
 
       <div class="pane">
         <div class="pane-bar mono" aria-hidden="true"><span class="pane-prompt">~$</span> <span id="paneCmd">ls ~/merek</span><span class="caret"></span></div>
+
+        <!-- work -->
+        <section class="panel" role="tabpanel" id="work" aria-labelledby="t-work" tabindex="0">
+          <p class="cmd mono">$ ls work/</p>
+          <h2 class="mono">Full-stack software engineer</h2>
+          <p>I've worked as a full-stack software engineer in Silicon Valley for 3+ years. Most recently I've built two different AI systems at work. Both are full IaC setups in Azure.</p>
+
+          <div class="stats">
+            <div class="stat"><b class="mono">3+</b><span>years as a full-stack software engineer</span></div>
+            <div class="stat"><b class="mono">2</b><span>production AI systems built in Azure</span></div>
+          </div>
+
+          <article class="system">
+            <p class="ship-k mono">01 · graph rag · prediction</p>
+            <h3>Time entry prediction</h3>
+            <p>It pulls data from a number of integrations and stores it on a synced schedule. It then makes predictions on that data using a graph RAG system to create time entries for billable and non-billable hours against jobs.</p>
+
+            <div class="flow">
+              <ul class="sources mono" aria-label="Integrations">
+                <li>GitHub</li><li>Google Calendar</li><li>Google Drive</li><li>Outlook Calendar</li><li>OneDrive</li><li>Jira</li><li>Zoom</li><li>etc.</li>
+              </ul>
+              <div class="flow-pipe mono" aria-hidden="true"><span>synced on a schedule</span></div>
+              <div class="entry mono" id="entry">
+                <p class="entry-head"><span>new time entry</span><em>example</em></p>
+                <dl>
+                  <div><dt>job</dt><dd data-v="Client A · Platform rebuild"></dd></div>
+                  <div><dt>task</dt><dd data-v="Development"></dd></div>
+                  <div><dt>hours</dt><dd data-v="2.5"></dd></div>
+                  <div><dt>billable</dt><dd data-v="yes"></dd></div>
+                  <div><dt>notes</dt><dd data-v="Sprint review, PR fixes"></dd></div>
+                </dl>
+              </div>
+            </div>
+
+            <p>A time entry has a lot of fields (job, task, hours, and more) that it needs to accurately guess, so it uses both heuristics and classification. It falls through a tiered system, first to last:</p>
+            <ol class="layers mono">
+              <li>history for the client <span>learned behaviour</span></li>
+              <li>history of teammates</li>
+              <li>full-text search</li>
+              <li>vector search</li>
+              <li>LLMs</li>
+              <li>…and more</li>
+            </ol>
+          </article>
+
+          <article class="system">
+            <p class="ship-k mono">02 · agent · reporting</p>
+            <h3>Reporting and actions chatbot</h3>
+            <p>A chatbot that has sandboxed access to do reporting, as well as take actions like approving timesheets. It can create charts for a user, tracks the history of how people are using it, and has proper token tooling for security.</p>
+            <ul class="tags mono">
+              <li>sandboxed reporting</li><li>approves timesheets</li><li>builds charts</li><li>usage history</li><li>token security</li>
+            </ul>
+          </article>
+
+          <h3 class="mono">also/</h3>
+          <p>Outside of that, I keep up to date on all the models, and I have extensive experience in how best to use AI within a corporate environment in the most secure way possible. Before the AI work, I was doing a lot of full-stack web development, and I have a ton of experience on the web side of things.</p>
+          <ul class="tags mono" aria-label="Stack">
+            <li>Azure</li><li>IaC</li><li>Graph RAG</li><li>vector search</li><li>LLM agents</li><li>secure enterprise AI</li><li>full-stack web</li>
+          </ul>
+        </section>
+
+        <!-- built -->
+        <section class="panel" role="tabpanel" id="built" aria-labelledby="t-built" tabindex="0">
+          <p class="cmd mono">$ ls built/</p>
+          <h2 class="mono">Things I've built</h2>
+          <div class="shipped">
+            <a class="ship" href="https://qclstaffboats.com" target="_blank" rel="noopener">
+              <span class="ship-k mono">operations · live ↗</span>
+              <b>qclstaffboats.com</b>
+              <span>Staff scheduling and boat booking for a fishing lodge.</span>
+            </a>
+            <a class="ship" href="https://rentive.ca" target="_blank" rel="noopener">
+              <span class="ship-k mono">product · live ↗</span>
+              <b>rentive.ca</b>
+              <span>Rental marketplace with AI support and AI listing import, built on my own.</span>
+            </a>
+            <div class="ship">
+              <span class="ship-k mono">data viz</span>
+              <b>Merridale sales pipeline</b>
+              <span>Data visualization of the sales pipeline at Merridale Ciderworks.</span>
+            </div>
+            <div class="ship">
+              <span class="ship-k mono">hardware · ml</span>
+              <b>Remote weather station</b>
+              <span>A remote weather station powered by machine learning.</span>
+            </div>
+          </div>
+          <button class="replay mono" type="button" data-goto="work">→ and the two systems I built at work</button>
+        </section>
 
         <!-- roots -->
         <section class="panel" role="tabpanel" id="roots" aria-labelledby="t-roots" tabindex="0">
@@ -147,90 +237,6 @@
             <li><b>4× ECAC Hockey All-Academic Team</b></li>
             <li><b>4× Thomas Van Arden Dukehart Academic Award</b><span>Highest GPA on the Union men's hockey team.</span></li>
           </ul>
-        </section>
-
-        <!-- work -->
-        <section class="panel" role="tabpanel" id="work" aria-labelledby="t-work" tabindex="0">
-          <p class="cmd mono">$ ls work/</p>
-          <h2 class="mono">What I've built at work</h2>
-          <p>At work, I've built two different systems. Both are full IaC setups in Azure.</p>
-
-          <article class="system">
-            <p class="ship-k mono">01 · graph rag · prediction</p>
-            <h3>Time entry prediction</h3>
-            <p>It pulls data from a number of integrations and stores it on a synced schedule. It then makes predictions on that data using a graph RAG system to create time entries for billable and non-billable hours against jobs.</p>
-
-            <div class="flow">
-              <ul class="sources mono" aria-label="Integrations">
-                <li>GitHub</li><li>Google Calendar</li><li>Google Drive</li><li>Outlook Calendar</li><li>OneDrive</li><li>Jira</li><li>Zoom</li><li>etc.</li>
-              </ul>
-              <div class="flow-pipe mono" aria-hidden="true"><span>synced on a schedule</span></div>
-              <div class="entry mono" id="entry">
-                <p class="entry-head"><span>new time entry</span><em>example</em></p>
-                <dl>
-                  <div><dt>job</dt><dd data-v="Client A · Platform rebuild"></dd></div>
-                  <div><dt>task</dt><dd data-v="Development"></dd></div>
-                  <div><dt>hours</dt><dd data-v="2.5"></dd></div>
-                  <div><dt>billable</dt><dd data-v="yes"></dd></div>
-                  <div><dt>notes</dt><dd data-v="Sprint review, PR fixes"></dd></div>
-                </dl>
-              </div>
-            </div>
-
-            <p>A time entry has a lot of fields (job, task, hours, and more) that it needs to accurately guess, so it uses both heuristics and classification. It falls through a tiered system, first to last:</p>
-            <ol class="layers mono">
-              <li>history for the client <span>learned behaviour</span></li>
-              <li>history of teammates</li>
-              <li>full-text search</li>
-              <li>vector search</li>
-              <li>LLMs</li>
-              <li>…and more</li>
-            </ol>
-          </article>
-
-          <article class="system">
-            <p class="ship-k mono">02 · agent · reporting</p>
-            <h3>Reporting and actions chatbot</h3>
-            <p>A chatbot that has sandboxed access to do reporting, as well as take actions like approving timesheets. It can create charts for a user, tracks the history of how people are using it, and has proper token tooling for security.</p>
-            <ul class="tags mono">
-              <li>sandboxed reporting</li><li>approves timesheets</li><li>builds charts</li><li>usage history</li><li>token security</li>
-            </ul>
-          </article>
-
-          <h3 class="mono">also/</h3>
-          <p>Outside of that, I keep up to date on all the models, and I have extensive experience in how best to use AI within a corporate environment in the most secure way possible. Before this I was doing a lot of full-stack web development, and I have a ton of experience on the web side of things.</p>
-          <ul class="tags mono" aria-label="Stack">
-            <li>Azure</li><li>IaC</li><li>Graph RAG</li><li>vector search</li><li>LLM agents</li><li>secure enterprise AI</li><li>full-stack web</li>
-          </ul>
-        </section>
-
-        <!-- built -->
-        <section class="panel" role="tabpanel" id="built" aria-labelledby="t-built" tabindex="0">
-          <p class="cmd mono">$ ls built/</p>
-          <h2 class="mono">Things I've built</h2>
-          <div class="shipped">
-            <a class="ship" href="https://qclstaffboats.com" target="_blank" rel="noopener">
-              <span class="ship-k mono">operations · live ↗</span>
-              <b>qclstaffboats.com</b>
-              <span>Staff scheduling and boat booking for a fishing lodge.</span>
-            </a>
-            <a class="ship" href="https://rentive.ca" target="_blank" rel="noopener">
-              <span class="ship-k mono">product · live ↗</span>
-              <b>rentive.ca</b>
-              <span>Rental marketplace with AI support and AI listing import, built on my own.</span>
-            </a>
-            <div class="ship">
-              <span class="ship-k mono">data viz</span>
-              <b>Merridale sales pipeline</b>
-              <span>Data visualization of the sales pipeline at Merridale Ciderworks.</span>
-            </div>
-            <div class="ship">
-              <span class="ship-k mono">hardware · ml</span>
-              <b>Remote weather station</b>
-              <span>A remote weather station powered by machine learning.</span>
-            </div>
-          </div>
-          <button class="replay mono" type="button" data-goto="work">→ and the two systems I built at work</button>
         </section>
 
         <!-- offline -->
