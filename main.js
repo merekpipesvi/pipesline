@@ -176,7 +176,7 @@
     help: () => [
       { t: 'available commands:', c: 'dim' },
       { t: '  whoami     who is behind this' },
-      { t: '  about      the full story (opens a page)' },
+      { t: '  about      more about me (opens a page)' },
       { t: '  shipped    things I have built' },
       { t: '  services   what flows through the pipe' },
       { t: '  contact    get in touch' },
@@ -185,8 +185,8 @@
     whoami: () => [
       { t: 'Merek Pipes' , c: 'ok' },
       { t: 'software engineer · AI systems · Azure · distributed systems' },
-      { t: 'ships AI that thousands of people use daily' },
-      { t: 'likes: building things that actually get used', c: 'dim' },
+      { t: 'builds AI systems that thousands of people use' },
+      { t: 'likes: solving problems in ways that take the thinking off the user', c: 'dim' },
       { t: 'more   ', c: 'dim', href: 'about.html', label: 'about.html ↗' },
     ],
     about: () => {
@@ -202,14 +202,14 @@
     ],
     shipped: () => [
       { t: 'rentive         ', href: 'https://rentive.ca', label: 'rentive.ca ↗' },
-      { t: 'graph-rag       knowledge assistant · thousands of users' },
-      { t: 'agents          chatbots that take actions + report' },
+      { t: 'graph-rag       time entry prediction · thousands of users' },
+      { t: 'chatbot         sandboxed reporting + timesheet approvals' },
       { t: 'qcl-booking     ', href: 'https://qclstaffboats.com', label: 'qclstaffboats.com ↗' },
     ],
     contact: () => contact,
-    hire: () => [{ t: 'excellent choice.', c: 'ok' }, ...contact],
-    sudo: () => [{ t: 'permission granted. kidding — but you can just email me:', c: 'dim' }, contact[0]],
-    exit: () => [{ t: 'there is no exit. only flow.', c: 'dim' }],
+    hire: () => [{ t: 'here is how to reach me:', c: 'ok' }, ...contact],
+    sudo: () => [{ t: 'no sudo here, but you can email me:', c: 'dim' }, contact[0]],
+    exit: () => [{ t: "nothing to exit. try 'help'.", c: 'dim' }],
     ping: () => [{ t: 'pong', c: 'ok' }],
     clear: () => { out.replaceChildren(); return []; },
   };

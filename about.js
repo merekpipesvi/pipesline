@@ -76,7 +76,7 @@
     show(ids[next], { focus: true });
   });
 
-  // 1–6 jumps straight to a directory
+  // 1 to 6 jumps straight to a directory
   addEventListener('keydown', e => {
     if (e.metaKey || e.ctrlKey || e.altKey || e.target.closest('input, textarea')) return;
     const n = Number(e.key);

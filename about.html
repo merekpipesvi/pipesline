@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Merek Pipes — About</title>
+  <title>About Merek Pipes</title>
   <meta name="description" content="Merek Pipes: grew up in a family cider business, played NCAA D1 hockey, played NCAA D1 hockey as a goaltender, studied Computer Engineering with a minor in Economics, and now builds AI systems in Azure.">
   <meta name="theme-color" content="#070a09">
-  <meta property="og:title" content="Merek Pipes — About">
+  <meta property="og:title" content="About Merek Pipes">
   <meta property="og:description" content="Family business roots, D1 hockey, Computer Engineering, and production AI systems.">
   <meta property="og:url" content="https://pipesline.com/about">
   <meta property="og:image" content="https://pipesline.com/img/merek.jpg">
@@ -45,7 +45,7 @@
 
         <dl class="facts mono">
           <div><dt>studied</dt><dd>Computer Engineering, Economics minor</dd></div>
-          <div><dt>gpa</dt><dd>3.97, graduated early</dd></div>
+          <div><dt>gpa</dt><dd>3.97</dd></div>
           <div><dt>hockey</dt><dd>goaltender, 4 years NCAA Division I</dd></div>
           <div><dt>now</dt><dd>AI systems · Azure · full-stack</dd></div>
           <div><dt>starter</dt><dd>sourdough, free on request</dd></div>
@@ -69,7 +69,7 @@
         <button role="tab" id="t-work" aria-controls="work" type="button"><span class="br" aria-hidden="true">├─</span>work/<kbd>4</kbd></button>
         <button role="tab" id="t-built" aria-controls="built" type="button"><span class="br" aria-hidden="true">├─</span>built/<kbd>5</kbd></button>
         <button role="tab" id="t-offline" aria-controls="offline" type="button"><span class="br" aria-hidden="true">└─</span>offline/<kbd>6</kbd></button>
-        <p class="tree-hint" aria-hidden="true">press 1–6 or use arrows</p>
+        <p class="tree-hint" aria-hidden="true">press 1 to 6 or use arrows</p>
       </div>
 
       <div class="pane">
@@ -78,7 +78,7 @@
         <!-- roots -->
         <section class="panel" role="tabpanel" id="roots" aria-labelledby="t-roots" tabindex="0">
           <p class="cmd mono">$ cat roots/merridale.md</p>
-          <h2 class="mono">Growing up in a growing business</h2>
+          <h2 class="mono">Merridale Ciderworks</h2>
           <p>My parents bought <a href="https://merridale.ca" target="_blank" rel="noopener">Merridale Ciderworks</a> when I was 2 years old, and I grew up on the farm watching it grow from just 2 part-time employees to the 40+ full-time employee corporation that it is today.</p>
 
           <div class="stats">
@@ -97,7 +97,7 @@
         <!-- hockey -->
         <section class="panel" role="tabpanel" id="hockey" aria-labelledby="t-hockey" tabindex="0">
           <p class="cmd mono">$ traceroute union-college</p>
-          <h2 class="mono">Hockey took me across the map</h2>
+          <h2 class="mono">Hockey</h2>
           <p>I grew up in Cobble Hill, BC, and played hockey all across Canada and the United States. It took me from Shawnigan Lake, to Richmond, to La Ronge, Saskatchewan, to Swan Valley, Manitoba, and all the way to Schenectady, New York, where I got a hockey scholarship to play goal for Union College.</p>
 
           <div class="route" style="--p: 0">
@@ -126,7 +126,7 @@
 
           <div class="stats">
             <div class="stat"><b class="mono" data-count="3.97" data-decimals="2">3.97</b><span>GPA</span></div>
-            <div class="stat"><b class="mono">early</b><span>graduated ahead of schedule</span></div>
+            <div class="stat"><b class="mono">2</b><span>years of undergraduate research</span></div>
           </div>
 
           <h3 class="mono">research/</h3>
@@ -134,7 +134,7 @@
           <figure class="chaos">
             <canvas id="chaos" height="150" aria-hidden="true"></canvas>
             <figcaption class="mono">
-              <span>two Lorenz signals that start <b>0.000001</b> apart. deterministic, but they look like noise.</span>
+              <span>two Lorenz signals that start <b>0.000001</b> apart and end up completely different. (illustration only)</span>
               <button type="button" data-rerun>↻ nudge &amp; rerun</button>
             </figcaption>
           </figure>
@@ -144,7 +144,7 @@
             <li><b>IEEE AESS Engineering Scholarship</b><span>Given to only 2 people annually across the country, for research in the aerospace field. The first recipient from Union College.</span></li>
             <li><b>Top Computer / Electrical Engineer</b><span>Awarded to the most excellent Computer or Electrical Engineer in my year.</span></li>
             <li><b>4× AHCA All-American Scholar</b><span>American Hockey Coaches Association.</span></li>
-            <li><b>ECAC Hockey All-Academic Team</b></li>
+            <li><b>4× ECAC Hockey All-Academic Team</b></li>
             <li><b>4× Thomas Van Arden Dukehart Academic Award</b><span>Highest GPA on the Union men's hockey team.</span></li>
           </ul>
         </section>
@@ -152,12 +152,12 @@
         <!-- work -->
         <section class="panel" role="tabpanel" id="work" aria-labelledby="t-work" tabindex="0">
           <p class="cmd mono">$ ls work/</p>
-          <h2 class="mono">Two systems, both running in production</h2>
+          <h2 class="mono">What I've built at work</h2>
           <p>At work, I've built two different systems. Both are full IaC setups in Azure.</p>
 
           <article class="system">
             <p class="ship-k mono">01 · graph rag · prediction</p>
-            <h3>Time entries that write themselves</h3>
+            <h3>Time entry prediction</h3>
             <p>It pulls data from a number of integrations and stores it on a synced schedule. It then makes predictions on that data using a graph RAG system to create time entries for billable and non-billable hours against jobs.</p>
 
             <div class="flow">
@@ -190,7 +190,7 @@
 
           <article class="system">
             <p class="ship-k mono">02 · agent · reporting</p>
-            <h3>A chatbot that can actually do things</h3>
+            <h3>Reporting and actions chatbot</h3>
             <p>A chatbot that has sandboxed access to do reporting, as well as take actions like approving timesheets. It can create charts for a user, tracks the history of how people are using it, and has proper token tooling for security.</p>
             <ul class="tags mono">
               <li>sandboxed reporting</li><li>approves timesheets</li><li>builds charts</li><li>usage history</li><li>token security</li>
@@ -217,7 +217,7 @@
             <a class="ship" href="https://rentive.ca" target="_blank" rel="noopener">
               <span class="ship-k mono">product · live ↗</span>
               <b>rentive.ca</b>
-              <span>Rental marketplace with AI support and AI listing import. Built solo.</span>
+              <span>Rental marketplace with AI support and AI listing import, built on my own.</span>
             </a>
             <div class="ship">
               <span class="ship-k mono">data viz</span>
@@ -259,11 +259,10 @@
 
     <section class="about-foot">
       <p class="cmd mono">$ ./contact</p>
-      <h2 class="mono">Want to work together?</h2>
+      <h2 class="mono">Get in touch</h2>
       <div class="cta">
         <a class="btn primary mono" href="mailto:hello@pipesline.com" data-email>hello@pipesline.com</a>
         <a class="btn mono" href="index.html">what I offer →</a>
-        <a class="btn mono" href="https://github.com/merekpipesvi" target="_blank" rel="noopener">github ↗</a>
       </div>
       <footer class="foot mono">© 2026 Pipesline · Merek Pipes</footer>
     </section>
