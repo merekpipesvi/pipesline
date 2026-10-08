@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Merek Pipes — About</title>
+  <meta name="description" content="Merek Pipes: grew up in a family cider business, played NCAA D1 hockey, played NCAA D1 hockey as a goaltender, studied Computer Engineering with a minor in Economics, and now builds AI systems in Azure.">
+  <meta name="theme-color" content="#070a09">
+  <meta property="og:title" content="Merek Pipes — About">
+  <meta property="og:description" content="Family business roots, D1 hockey, Computer Engineering, and production AI systems.">
+  <meta property="og:url" content="https://pipesline.com/about">
+  <meta property="og:image" content="https://pipesline.com/img/merek.jpg">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23070a09'/%3E%3Cpath d='M11 26V8h6.5a5 5 0 0 1 0 10H11' fill='none' stroke='%233dff8a' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="about.css">
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="mark mono" href="index.html">pipes<span>line</span></a>
+    <nav class="top-links">
+      <a class="hire mono" href="index.html#output">[ hire ]</a>
+    </nav>
+  </header>
+
+  <main class="about">
+    <!-- ---------- intro ---------- -->
+    <section class="intro">
+      <figure class="photo">
+        <div class="term-bar" aria-hidden="true">
+          <i></i><i></i><i></i>
+          <span class="mono">~/merek.jpg</span>
+        </div>
+        <img src="img/merek.jpg" width="560" height="672" alt="Headshot of Merek Pipes in a navy suit">
+      </figure>
+
+      <div class="intro-text">
+        <p class="cmd mono">$ cat ~/README.md</p>
+        <h1 class="mono">Merek Pipes</h1>
+        <p class="lead">I love to solve problems in efficient ways that alleviate the burden of thought from the user.</p>
+        <p>I grew up on a cider farm watching a family business grow, played goalie across Canada and the US, studied Computer Engineering with a minor in Economics, and now I build AI systems that run in production.</p>
+
+        <dl class="facts mono">
+          <div><dt>studied</dt><dd>Computer Engineering, Economics minor</dd></div>
+          <div><dt>gpa</dt><dd>3.97, graduated early</dd></div>
+          <div><dt>hockey</dt><dd>goaltender, 4 years NCAA Division I</dd></div>
+          <div><dt>now</dt><dd>AI systems · Azure · full-stack</dd></div>
+          <div><dt>starter</dt><dd>sourdough, free on request</dd></div>
+        </dl>
+
+        <div class="intro-cta">
+          <a class="btn primary mono" href="#explore" data-goto="work">see my work</a>
+          <a class="btn mono" href="mailto:hello@pipesline.com" data-email>hello@pipesline.com</a>
+          <button class="btn mono" type="button" data-print>print as resume</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- explorer ---------- -->
+    <section class="explorer" id="explore" aria-label="About Merek">
+      <div class="tree mono" role="tablist" aria-label="Sections" aria-orientation="vertical">
+        <p class="tree-root" aria-hidden="true">~/merek</p>
+        <button role="tab" id="t-roots" aria-controls="roots" type="button"><span class="br" aria-hidden="true">├─</span>roots/<kbd>1</kbd></button>
+        <button role="tab" id="t-hockey" aria-controls="hockey" type="button"><span class="br" aria-hidden="true">├─</span>hockey/<kbd>2</kbd></button>
+        <button role="tab" id="t-academic" aria-controls="academic" type="button"><span class="br" aria-hidden="true">├─</span>academic/<kbd>3</kbd></button>
+        <button role="tab" id="t-work" aria-controls="work" type="button"><span class="br" aria-hidden="true">├─</span>work/<kbd>4</kbd></button>
+        <button role="tab" id="t-built" aria-controls="built" type="button"><span class="br" aria-hidden="true">├─</span>built/<kbd>5</kbd></button>
+        <button role="tab" id="t-offline" aria-controls="offline" type="button"><span class="br" aria-hidden="true">└─</span>offline/<kbd>6</kbd></button>
+        <p class="tree-hint" aria-hidden="true">press 1–6 or use arrows</p>
+      </div>
+
+      <div class="pane">
+        <div class="pane-bar mono" aria-hidden="true"><span class="pane-prompt">~$</span> <span id="paneCmd">ls ~/merek</span><span class="caret"></span></div>
+
+        <!-- roots -->
+        <section class="panel" role="tabpanel" id="roots" aria-labelledby="t-roots" tabindex="0">
+          <p class="cmd mono">$ cat roots/merridale.md</p>
+          <h2 class="mono">Growing up in a growing business</h2>
+          <p>My parents bought <a href="https://merridale.ca" target="_blank" rel="noopener">Merridale Ciderworks</a> when I was 2 years old, and I grew up on the farm watching it grow from just 2 part-time employees to the 40+ full-time employee corporation that it is today.</p>
+
+          <div class="stats">
+            <div class="stat"><b class="mono" data-count="2">2</b><span>part-time employees when we started</span></div>
+            <div class="stat-arrow mono" aria-hidden="true">→</div>
+            <div class="stat"><b class="mono" data-count="40" data-suffix="+">40+</b><span>full-time employees today</span></div>
+          </div>
+
+          <p>Throughout that time, I've helped modernize a number of their systems and technical solutions. From inventory, to their sales pipeline, and beyond.</p>
+          <ul class="tags mono" aria-label="Systems I helped modernize">
+            <li>inventory</li><li>sales pipeline</li><li>data visualization</li><li>…and beyond</li>
+          </ul>
+          <blockquote>Growing up watching a family business grow has given me insight into how small businesses run: what works and what doesn't, and what's possible (and what's not) for people who don't come from a technical background.</blockquote>
+        </section>
+
+        <!-- hockey -->
+        <section class="panel" role="tabpanel" id="hockey" aria-labelledby="t-hockey" tabindex="0">
+          <p class="cmd mono">$ traceroute union-college</p>
+          <h2 class="mono">Hockey took me across the map</h2>
+          <p>I grew up in Cobble Hill, BC, and played hockey all across Canada and the United States. It took me from Shawnigan Lake, to Richmond, to La Ronge, Saskatchewan, to Swan Valley, Manitoba, and all the way to Schenectady, New York, where I got a hockey scholarship to play goal for Union College.</p>
+
+          <div class="route" style="--p: 0">
+            <div class="route-track" aria-hidden="true"><div class="route-fill"></div></div>
+            <ol>
+              <li><span class="dot" aria-hidden="true"></span><b>Shawnigan Lake</b><span>British Columbia</span></li>
+              <li><span class="dot" aria-hidden="true"></span><b>Richmond</b><span>British Columbia</span></li>
+              <li><span class="dot" aria-hidden="true"></span><b>La Ronge</b><span>Saskatchewan</span></li>
+              <li><span class="dot" aria-hidden="true"></span><b>Swan Valley</b><span>Manitoba</span></li>
+              <li><span class="dot" aria-hidden="true"></span><b>Schenectady</b><span>New York · Union College</span></li>
+            </ol>
+          </div>
+          <button class="replay mono" type="button" data-replay>↻ replay the trip</button>
+
+          <div class="stats">
+            <div class="stat"><b class="mono">4</b><span>years at Union College, NCAA Division I</span></div>
+            <div class="stat"><b class="mono">4×</b><span>Thomas Van Arden Dukehart Academic Award, highest GPA on the team</span></div>
+          </div>
+        </section>
+
+        <!-- academic -->
+        <section class="panel" role="tabpanel" id="academic" aria-labelledby="t-academic" tabindex="0">
+          <p class="cmd mono">$ cat academic/transcript</p>
+          <h2 class="mono">Union College</h2>
+          <p>A degree in Computer Engineering with a minor in Economics. I graduated early with a 3.97 GPA while juggling hockey, school, and research.</p>
+
+          <div class="stats">
+            <div class="stat"><b class="mono" data-count="3.97" data-decimals="2">3.97</b><span>GPA</span></div>
+            <div class="stat"><b class="mono">early</b><span>graduated ahead of schedule</span></div>
+          </div>
+
+          <h3 class="mono">research/</h3>
+          <p>For my 3rd and 4th year, I did research with Professor Chandra Pappu in using chaos theory for a joint radar and communication waveform: <em>controlled chaotic signals for dual-functional bistatic radar-communication systems</em>. The idea is to integrate radar with communications so you need fewer RF transmitters.</p>
+          <figure class="chaos">
+            <canvas id="chaos" height="150" aria-hidden="true"></canvas>
+            <figcaption class="mono">
+              <span>two Lorenz signals that start <b>0.000001</b> apart. deterministic, but they look like noise.</span>
+              <button type="button" data-rerun>↻ nudge &amp; rerun</button>
+            </figcaption>
+          </figure>
+
+          <h3 class="mono">awards/</h3>
+          <ul class="awards">
+            <li><b>IEEE AESS Engineering Scholarship</b><span>Given to only 2 people annually across the country, for research in the aerospace field. The first recipient from Union College.</span></li>
+            <li><b>Top Computer / Electrical Engineer</b><span>Awarded to the most excellent Computer or Electrical Engineer in my year.</span></li>
+            <li><b>4× AHCA All-American Scholar</b><span>American Hockey Coaches Association.</span></li>
+            <li><b>ECAC Hockey All-Academic Team</b></li>
+            <li><b>4× Thomas Van Arden Dukehart Academic Award</b><span>Highest GPA on the Union men's hockey team.</span></li>
+          </ul>
+        </section>
+
+        <!-- work -->
+        <section class="panel" role="tabpanel" id="work" aria-labelledby="t-work" tabindex="0">
+          <p class="cmd mono">$ ls work/</p>
+          <h2 class="mono">Two systems, both running in production</h2>
+          <p>At work, I've built two different systems. Both are full IaC setups in Azure.</p>
+
+          <article class="system">
+            <p class="ship-k mono">01 · graph rag · prediction</p>
+            <h3>Time entries that write themselves</h3>
+            <p>It pulls data from a number of integrations and stores it on a synced schedule. It then makes predictions on that data using a graph RAG system to create time entries for billable and non-billable hours against jobs.</p>
+
+            <div class="flow">
+              <ul class="sources mono" aria-label="Integrations">
+                <li>GitHub</li><li>Google Calendar</li><li>Google Drive</li><li>Outlook Calendar</li><li>OneDrive</li><li>Jira</li><li>Zoom</li><li>etc.</li>
+              </ul>
+              <div class="flow-pipe mono" aria-hidden="true"><span>synced on a schedule</span></div>
+              <div class="entry mono" id="entry">
+                <p class="entry-head"><span>new time entry</span><em>example</em></p>
+                <dl>
+                  <div><dt>job</dt><dd data-v="Client A · Platform rebuild"></dd></div>
+                  <div><dt>task</dt><dd data-v="Development"></dd></div>
+                  <div><dt>hours</dt><dd data-v="2.5"></dd></div>
+                  <div><dt>billable</dt><dd data-v="yes"></dd></div>
+                  <div><dt>notes</dt><dd data-v="Sprint review, PR fixes"></dd></div>
+                </dl>
+              </div>
+            </div>
+
+            <p>A time entry has a lot of fields (job, task, hours, and more) that it needs to accurately guess, so it uses both heuristics and classification. It falls through a tiered system, first to last:</p>
+            <ol class="layers mono">
+              <li>history for the client <span>learned behaviour</span></li>
+              <li>history of teammates</li>
+              <li>full-text search</li>
+              <li>vector search</li>
+              <li>LLMs</li>
+              <li>…and more</li>
+            </ol>
+          </article>
+
+          <article class="system">
+            <p class="ship-k mono">02 · agent · reporting</p>
+            <h3>A chatbot that can actually do things</h3>
+            <p>A chatbot that has sandboxed access to do reporting, as well as take actions like approving timesheets. It can create charts for a user, tracks the history of how people are using it, and has proper token tooling for security.</p>
+            <ul class="tags mono">
+              <li>sandboxed reporting</li><li>approves timesheets</li><li>builds charts</li><li>usage history</li><li>token security</li>
+            </ul>
+          </article>
+
+          <h3 class="mono">also/</h3>
+          <p>Outside of that, I keep up to date on all the models, and I have extensive experience in how best to use AI within a corporate environment in the most secure way possible. Before this I was doing a lot of full-stack web development, and I have a ton of experience on the web side of things.</p>
+          <ul class="tags mono" aria-label="Stack">
+            <li>Azure</li><li>IaC</li><li>Graph RAG</li><li>vector search</li><li>LLM agents</li><li>secure enterprise AI</li><li>full-stack web</li>
+          </ul>
+        </section>
+
+        <!-- built -->
+        <section class="panel" role="tabpanel" id="built" aria-labelledby="t-built" tabindex="0">
+          <p class="cmd mono">$ ls built/</p>
+          <h2 class="mono">Things I've built</h2>
+          <div class="shipped">
+            <a class="ship" href="https://qclstaffboats.com" target="_blank" rel="noopener">
+              <span class="ship-k mono">operations · live ↗</span>
+              <b>qclstaffboats.com</b>
+              <span>Staff scheduling and boat booking for a fishing lodge.</span>
+            </a>
+            <a class="ship" href="https://rentive.ca" target="_blank" rel="noopener">
+              <span class="ship-k mono">product · live ↗</span>
+              <b>rentive.ca</b>
+              <span>Rental marketplace with AI support and AI listing import. Built solo.</span>
+            </a>
+            <div class="ship">
+              <span class="ship-k mono">data viz</span>
+              <b>Merridale sales pipeline</b>
+              <span>Data visualization of the sales pipeline at Merridale Ciderworks.</span>
+            </div>
+            <div class="ship">
+              <span class="ship-k mono">hardware · ml</span>
+              <b>Remote weather station</b>
+              <span>A remote weather station powered by machine learning.</span>
+            </div>
+          </div>
+          <button class="replay mono" type="button" data-goto="work">→ and the two systems I built at work</button>
+        </section>
+
+        <!-- offline -->
+        <section class="panel" role="tabpanel" id="offline" aria-labelledby="t-offline" tabindex="0">
+          <p class="cmd mono">$ cat offline/*.txt</p>
+          <h2 class="mono">When I'm not coding</h2>
+          <ul class="hobbies">
+            <li><span class="glyph mono" aria-hidden="true">U·ᴥ·U</span><b class="mono">dog sitting</b></li>
+            <li><span class="glyph mono" aria-hidden="true">■━━■</span><b class="mono">working out</b></li>
+            <li><span class="glyph mono" aria-hidden="true">━━╋━━</span><b class="mono">BJJ</b></li>
+            <li><span class="glyph mono" aria-hidden="true">~♨~</span><b class="mono">cooking + baking</b></li>
+          </ul>
+
+          <div class="starter">
+            <div class="jar" aria-hidden="true"><div class="dough"></div></div>
+            <div class="starter-text">
+              <p>I would happily share sourdough starter with anyone who would ask.</p>
+              <p class="mono starter-state" id="starterState" aria-live="polite">status: hungry</p>
+              <button class="btn mono" type="button" id="feed">feed the starter</button>
+              <a class="btn primary mono" id="askStarter" href="mailto:hello@pipesline.com?subject=Sourdough%20starter" hidden>ask for some →</a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="about-foot">
+      <p class="cmd mono">$ ./contact</p>
+      <h2 class="mono">Want to work together?</h2>
+      <div class="cta">
+        <a class="btn primary mono" href="mailto:hello@pipesline.com" data-email>hello@pipesline.com</a>
+        <a class="btn mono" href="index.html">what I offer →</a>
+        <a class="btn mono" href="https://github.com/merekpipesvi" target="_blank" rel="noopener">github ↗</a>
+      </div>
+      <footer class="foot mono">© 2026 Pipesline · Merek Pipes</footer>
+    </section>
+  </main>
+
+  <script src="config.js"></script>
+  <script src="about.js" defer></script>
+</body>
+</html>

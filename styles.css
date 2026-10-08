@@ -67,6 +67,12 @@ a { color: var(--accent); }
   transition: background .2s, color .2s;
 }
 .hire:hover { background: var(--accent); color: var(--accent-ink); }
+.top-links { display: flex; gap: 10px; }
+.hire.ghost { color: var(--muted); border-color: var(--line); }
+.hire.ghost:hover { color: var(--accent-ink); border-color: var(--accent); }
+.more-link { display: inline-block; margin-top: 16px; color: var(--accent); font-size: .8rem; text-decoration: none; }
+.more-link span { color: var(--muted); transition: color .2s; }
+.more-link:hover span { color: var(--text); }
 
 /* ---------- pipe ---------- */
 main { position: relative; z-index: 2; }

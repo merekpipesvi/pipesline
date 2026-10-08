@@ -1,7 +1,5 @@
 (() => {
-  /* ---------- config: the only things you should need to edit ---------- */
-  const EMAIL = 'hello@pipesline.com';
-  const BOOK_URL = ''; // Cal.com / Calendly link; empty falls back to an email with a subject
+  const { EMAIL, BOOK_URL } = window.PIPESLINE; // edit these in config.js
 
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -178,6 +176,7 @@
     help: () => [
       { t: 'available commands:', c: 'dim' },
       { t: '  whoami     who is behind this' },
+      { t: '  about      the full story (opens a page)' },
       { t: '  shipped    things I have built' },
       { t: '  services   what flows through the pipe' },
       { t: '  contact    get in touch' },
@@ -188,7 +187,12 @@
       { t: 'software engineer · AI systems · Azure · distributed systems' },
       { t: 'ships AI that thousands of people use daily' },
       { t: 'likes: building things that actually get used', c: 'dim' },
+      { t: 'more   ', c: 'dim', href: 'about.html', label: 'about.html ↗' },
     ],
+    about: () => {
+      setTimeout(() => { location.href = 'about.html'; }, 600);
+      return [{ t: 'cd ~/merek …', c: 'ok' }];
+    },
     services: () => [
       { t: '01  intake   AI opportunity audit' },
       { t: '02  build    custom AI systems' },
@@ -200,7 +204,7 @@
       { t: 'rentive         ', href: 'https://rentive.ca', label: 'rentive.ca ↗' },
       { t: 'graph-rag       knowledge assistant · thousands of users' },
       { t: 'agents          chatbots that take actions + report' },
-      { t: 'qcl-booking     staff + boat scheduling' },
+      { t: 'qcl-booking     ', href: 'https://qclstaffboats.com', label: 'qclstaffboats.com ↗' },
     ],
     contact: () => contact,
     hire: () => [{ t: 'excellent choice.', c: 'ok' }, ...contact],
@@ -209,7 +213,7 @@
     ping: () => [{ t: 'pong', c: 'ok' }],
     clear: () => { out.replaceChildren(); return []; },
   };
-  const aliases = { ls: 'shipped', projects: 'shipped', work: 'shipped', email: 'contact', book: 'contact', '?': 'help' };
+  const aliases = { ls: 'shipped', projects: 'shipped', work: 'shipped', email: 'contact', book: 'contact', '?': 'help', cd: 'about', me: 'about', resume: 'about' };
 
   const history = [];
   let hIndex = 0;
