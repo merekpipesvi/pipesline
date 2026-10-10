@@ -144,7 +144,7 @@
   layout();
 
   /* ---------- terminal ---------- */
-  const bookHref = BOOK_URL || `mailto:${EMAIL}?subject=${encodeURIComponent('20-min call')}`;
+  const bookHref = BOOK_URL || `mailto:${EMAIL}?subject=${encodeURIComponent('Intro call')}`;
   $$('[data-email]').forEach(a => { a.href = `mailto:${EMAIL}`; a.textContent = EMAIL; });
   $('[data-book]').href = bookHref;
 
@@ -169,7 +169,7 @@
 
   const contact = [
     { t: 'email  ', c: 'dim', href: `mailto:${EMAIL}`, label: EMAIL },
-    { t: 'call   ', c: 'dim', href: bookHref, label: 'book a 20-min call' },
+    { t: 'call   ', c: 'dim', href: bookHref, label: 'book a free intro call' },
   ];
 
   const commands = {
@@ -178,7 +178,7 @@
       { t: '  whoami     who is behind this' },
       { t: '  about      more about me (opens a page)' },
       { t: '  shipped    things I have built' },
-      { t: '  services   what flows through the pipe' },
+      { t: '  pipeline   how working together usually goes' },
       { t: '  contact    get in touch' },
       { t: '  clear      flush the pipes' },
     ],
@@ -194,12 +194,14 @@
       setTimeout(() => { location.href = 'about.html'; }, 600);
       return [{ t: 'cd ~/merek …', c: 'ok' }];
     },
-    services: () => [
-      { t: '01  intake   AI opportunity audit' },
-      { t: '02  build    custom AI systems' },
-      { t: '03  train    team enablement' },
-      { t: '04  run      ongoing support' },
-      { t: "scroll up and hit '+ more' on any stage for details", c: 'dim' },
+    pipeline: () => [
+      { t: '01  intro       a free call about your business' },
+      { t: '02  discovery   the systems, tools, and data you use' },
+      { t: '03  plan        what is worth building, with an estimate' },
+      { t: '04  build       weekly check-ins and marked deliverables' },
+      { t: "05  rollout     getting it into your team's hands" },
+      { t: '06  support     paid monthly retainer, optional' },
+      { t: "every business is different, so this changes with each one.", c: 'dim' },
     ],
     shipped: () => [
       { t: 'rentive         ', href: 'https://rentive.ca', label: 'rentive.ca ↗' },
@@ -214,7 +216,7 @@
     ping: () => [{ t: 'pong', c: 'ok' }],
     clear: () => { out.replaceChildren(); return []; },
   };
-  const aliases = { ls: 'shipped', projects: 'shipped', work: 'shipped', email: 'contact', book: 'contact', '?': 'help', cd: 'about', me: 'about', resume: 'about' };
+  const aliases = { ls: 'shipped', projects: 'shipped', work: 'shipped', email: 'contact', book: 'contact', '?': 'help', services: 'pipeline', process: 'pipeline', cd: 'about', me: 'about', resume: 'about' };
 
   const history = [];
   let hIndex = 0;
@@ -250,6 +252,7 @@
       { t: 'pipesline --status', c: 'cmdline' },
       { t: '● flow: nominal', c: 'ok' },
       { t: '● accepting new projects', c: 'ok' },
+      { t: 'step 01 is a free intro call.', c: 'dim' },
       { t: "type 'help' to look around, or just say hi ↓", c: 'dim' },
     ];
     if (reduce) return lines.forEach(print);

@@ -6,7 +6,6 @@
 
   $$('[data-email]').forEach(a => { a.href = `mailto:${EMAIL}`; a.textContent = EMAIL; });
   $('#askStarter').href = `mailto:${EMAIL}?subject=${encodeURIComponent('Sourdough starter')}`;
-  $('[data-print]').addEventListener('click', () => print());
 
   /* ---------- explorer tabs ---------- */
   const tabs = $$('[role="tab"]');
