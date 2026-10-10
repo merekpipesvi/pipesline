@@ -2,7 +2,7 @@
 
 Static marketing site for Pipesline (Merek Pipes: AI consulting). No build step.
 
-- `config.js`: `EMAIL` / `BOOK_URL`, shared by every page
+- `config.js`: `EMAIL`, shared by every page
 - `index.html`: content
 - `styles.css`: styles
 - `main.js`: scroll-driven pipe and terminal

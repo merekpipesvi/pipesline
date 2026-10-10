@@ -1,5 +1,5 @@
 (() => {
-  const { EMAIL, BOOK_URL } = window.PIPESLINE; // edit these in config.js
+  const { EMAIL } = window.PIPESLINE; // edit in config.js
 
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -144,9 +144,7 @@
   layout();
 
   /* ---------- terminal ---------- */
-  const bookHref = BOOK_URL || `mailto:${EMAIL}?subject=${encodeURIComponent('Intro call')}`;
   $$('[data-email]').forEach(a => { a.href = `mailto:${EMAIL}`; a.textContent = EMAIL; });
-  $('[data-book]').href = bookHref;
 
   const body = $('#termBody');
   const out = $('#termOut');
@@ -169,7 +167,6 @@
 
   const contact = [
     { t: 'email  ', c: 'dim', href: `mailto:${EMAIL}`, label: EMAIL },
-    { t: 'call   ', c: 'dim', href: bookHref, label: 'book a free intro call' },
   ];
 
   const commands = {
